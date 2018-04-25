@@ -1,0 +1,24 @@
+.rightMenu {
+    position: absolute;
+    width: 120px;
+    line-height: 24px;
+    z-index: 999;
+    background: #FFF;
+    border: 1px solid #F2F2F2;
+    border-bottom: none;
+    border-radius: 3px;
+    display: none;
+}
+
+.rightMenu li {
+    display: block;
+    padding: 4px 10px;
+    color: #CCC;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.rightMenu li:hover {
+    background: #EEE;
+    color: #666;
+    color: #5FB878;
+}
