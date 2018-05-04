@@ -14,7 +14,7 @@
 
   <!-- Build Status -->
   <a href="https://blog.suremotoo.site/e-tools">
-    <img src="https://img.shields.io/travis/Suremotoo/e-tools.svg" alt="build">
+    <img src="https://img.shields.io/badge/platform-MacOS%7CWindows%7CLinux-orange.svg" alt="platform">
   </a>
 </div>
 
