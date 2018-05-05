@@ -36,7 +36,8 @@ If you wish to build **E-tools** yourself:
 
 - Clone this repo
   `git clone https://github.com/Suremotoo/e-tools.git`
-- Run `npm install` and `npm install --save glob`
+- Run `cd e-tools`
+- Run `npm install`
 - Run `npm start`
 
 ## License
