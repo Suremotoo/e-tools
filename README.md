@@ -9,17 +9,19 @@
 <div align="center">
   <!-- License -->
  <a href="https://blog.suremotoo.site/e-tools">
-    <img src="https://img.shields.io/github/license/Suremotoo/e-tools.svg" alt="build">
+    <img src="https://img.shields.io/github/license/Suremotoo/e-tools.svg" alt="License">
   </a>
 
-  <!-- Build Status -->
+  <!-- Platform -->
   <a href="https://blog.suremotoo.site/e-tools">
     <img src="https://img.shields.io/badge/platform-MacOS%7CWindows%7CLinux-orange.svg" alt="platform">
   </a>
 </div>
 
 
-![](https://github.com/Suremotoo/e-tools/blob/master/assets/img/screenshot.png)
+![中文](https://github.com/Suremotoo/e-tools/blob/master/assets/img/screenshot.png)
+
+![English](https://github.com/Suremotoo/e-tools/blob/master/assets/img/us-screenshot.png)
 
 
 ## Download and Install
