@@ -1,4 +1,6 @@
 const shell = require('electron').shell
+const path = require('path')
+const url = require('url')
 
 layui.use(['element'], function() {
     var $ = layui.jquery,
@@ -178,14 +180,28 @@ layui.use(['element'], function() {
         var exLinksBtn = $(val).children("a").get(0);
         (function(index) {
             $(val).click(function() {
-               var ss =  $(exLinksBtn).data('href')
-               // 调用外部浏览器打开地址
+                var ss = $(exLinksBtn).data('href')
+                // 调用外部浏览器打开地址
                 shell.openExternal($(exLinksBtn).data('href'));
             });
 
         })(index);
     });
 
-
+// 绑定切换语言监听事件
+    $('#select_language a').on('click', function() {
+        var othis = $(this),
+            language = othis.data('language');
+             var location = window.location;
+        switch (language) {
+            case "us":
+                location.href = "index-us.html"
+                break;
+            case "cn":
+                location.href = "index.html"
+                break;
+            default:
+        }
+    });
 
 });

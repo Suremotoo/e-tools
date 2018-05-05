@@ -6,6 +6,7 @@ const glob = require('glob')
 const debug = /--debug/.test(process.argv[2])
 const autoUpdater = require('./auto-updater')
 
+
 // 保持一个对于 window 对象的全局引用，如果你不这样做，
 // 当 JavaScript 对象被垃圾回收， window 会被自动地关闭
 let mainWindow
@@ -29,6 +30,7 @@ function initialize() {
         if (process.platform === 'linux') {
             windowOptions.icon = path.join(__dirname, '/assets/app-icon/png/512.png')
         }
+
 
         mainWindow = new BrowserWindow(windowOptions);
 

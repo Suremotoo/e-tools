@@ -178,14 +178,19 @@ let template = [{
     }
   }]
 }, {
-  label: '帮助',
-  role: 'help',
-  submenu: [{
-    label: '学习更多',
-    click: function () {
-      electron.shell.openExternal('http://electron.atom.io')
-    }
-  }]
+    label: '帮助',
+    role: 'help',
+    submenu: [{
+        label: 'Repository',
+        click: function() {
+            electron.shell.openExternal('https://github.com/Suremotoo/e-tools')
+        }
+    }, {
+        label: 'Open Issue',
+        click: function() {
+            electron.shell.openExternal('https://github.com/Suremotoo/e-tools/issues/new')
+        }
+    }]
 }]
 
 function addUpdateMenuItems (items, position) {
