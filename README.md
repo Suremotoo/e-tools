@@ -26,9 +26,9 @@
 
 ## Download and Install
 
-| ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-pass-sm.png)                                                                                                             | ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png)                                                                                                                     | ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                                                   |
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| [![latest version](https://img.shields.io/github/downloads/Suremotoo/e-tools/latest/E-tools-mac.zip.svg)](https://github.com/Suremotoo/e-tools/releases/download/v1.0.0/E-tools-mac.zip) | [![latest version](https://img.shields.io/github/downloads/Suremotoo/e-tools/latest/E-tools-win32-ia32.zip.svg)](https://github.com/Suremotoo/e-tools/releases/download/v1.0.0/E-tools-win32-ia32.zip) | [![latest version](https://img.shields.io/github/downloads/Suremotoo/e-tools/latest/E-tools-linux-x64.zip.svg)](https://github.com/Suremotoo/e-tools/releases/download/v1.0.0/E-tools-linux-x64.zip) |
+![![Releases](https://img.shields.io/conda/pn/conda-forge/python.svg?style=for-the-badge)](https://github.com/Suremotoo/e-tools/releases)
+
+
 
 ## Development
 
