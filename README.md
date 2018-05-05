@@ -26,8 +26,7 @@
 
 ## Download and Install
 
-[![Releases](https://img.shields.io/conda/pn/conda-forge/python.svg)](https://github.com/Suremotoo/e-tools/releases)
-
+[![Releases](https://img.shields.io/conda/pn/conda-forge/python.svg?style=for-the-badge)](https://github.com/Suremotoo/e-tools/releases)
 
 
 
