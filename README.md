@@ -16,6 +16,11 @@
   <a href="https://blog.suremotoo.site/e-tools">
     <img src="https://img.shields.io/badge/platform-MacOS%7CWindows%7CLinux-orange.svg" alt="platform">
   </a>
+  
+   <!-- Downloads total -->
+  <a href="https://marktext.github.io/website">
+    <img src="https://img.shields.io/github/downloads/Suremotoo/e-tools/total.svg" alt="total download">
+  </a>
 </div>
 
 
