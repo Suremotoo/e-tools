@@ -8,17 +8,17 @@
 
 <div align="center">
   <!-- License -->
- <a href="https://blog.suremotoo.site/e-tools">
+ <a href="https://github.com/Suremotoo/e-tools">
     <img src="https://img.shields.io/github/license/Suremotoo/e-tools.svg" alt="License">
   </a>
 
   <!-- Platform -->
-  <a href="https://blog.suremotoo.site/e-tools">
+  <a href="https://github.com/Suremotoo/e-tools">
     <img src="https://img.shields.io/badge/platform-MacOS%7CWindows%7CLinux-orange.svg" alt="platform">
   </a>
   
    <!-- Downloads total -->
-  <a href="https://blog.suremotoo.site/e-tools">
+  <a href="https://github.com/Suremotoo/e-tools">
     <img src="https://img.shields.io/github/downloads/Suremotoo/e-tools/total.svg" alt="total download">
   </a>
 </div>
