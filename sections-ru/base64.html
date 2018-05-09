@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Base64</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script type="text/javascript" src="../renderer-process/popup.js"></script>
+    <script type="text/javascript" src="../renderer-process/extentFunction.js"></script>
+</head>
+
+<body>
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>Base64 Шифрование и Расшифровка</legend>
+    </fieldset>
+    <form class="layui-form " action="">
+        <input type="hidden" name="hidden_type" value="EncBase64">
+        <div class="layui-form-item" pane="">
+            <label class="layui-form-label">Выберите тип</label>
+            <div class="layui-input-block">
+                <input type="checkbox" name="enc_type" title="Ordinary" lay-filter="chk_condition" autocomplete="off" checked="" value="general" 
+                data-obj='[
+                  {
+                    "input_id": "btn_base64_encode",
+                    "func_name": "crypto.getEncBase64"
+                  },
+                  {
+                    "input_id": "btn_base64_decode",
+                    "func_name": "crypto.getDecBase64"
+                  }
+                ]'>
+                <input type="checkbox" name="enc_type" title="16Hex" lay-filter="chk_condition" autocomplete="off" value="HEX" 
+                data-obj='[
+                  {
+                    "input_id": "btn_base64_encode",
+                    "func_name": "crypto.getEncBase64Hex"
+                  },
+                  {
+                    "input_id": "btn_base64_decode",
+                    "func_name": "crypto.getDecBase64Hex"
+                  }
+                ]'>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <div class="layui-row">
+                <div class="layui-col-xs6">
+                    <textarea width="97%" placeholder="Please enter content" class="layui-textarea" lay-verify="required" lay-verType="msg" style="height:240px;" id="origin_content" name="origin_content"></textarea>
+                </div>
+                <div class="layui-col-xs6">
+                    <textarea width="97%" placeholder="Encrypt/Decrypt result" class="layui-textarea" style="height:240px;" id="result_content" name="result_content"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item " style="margin-bottom: 5px;text-align: center;">
+            <button type="button" class="layui-btn " lay-submit="" lay-filter="btn_submit" id="btn_base64_encode" data-func="crypto.getEncBase64"> Шифровать</button>
+            <button type="button" class="layui-btn " lay-submit="" lay-filter="btn_submit" id="btn_base64_decode" data-func="crypto.getDecBase64"> Расшифровать</button>
+            <button type="button" class="layui-btn" lay-submit="" lay-filter="" id="btn_md5_clear" onclick="clearContent();">Очистить</button>
+        </div>
+    </form>
+    <script src="../layui/layui.js"></script>
+    <script src="../renderer-process/requestJS.js"></script>
+</body>
+
+</html>

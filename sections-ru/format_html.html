@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Форматирование HTML/Javascript/CSS</title>
+    <link rel="stylesheet" type="text/css" href="../lib/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="../lib/codemirror/theme/material.css">
+    <link rel="stylesheet" type="text/css" href="../lib/codemirror/theme/erlang-dark.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../css/codeMirror.css">
+    <script type="text/javascript" src="../lib/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="../lib/codemirror/mode/javascript/javascript.js"></script>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/jquery/jquery.cookie.js"></script>
+    <script src="../lib/jsbeautify/beautify.js"></script>
+    <script src="../lib/jsbeautify/beautify-css.js"></script>
+    <script src="../lib/jsbeautify/beautify-html.js"></script>
+</head>
+
+<body>
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>Форматирование HTML/CSS/Javascript
+            <div class="layui-input-inline" style="text-align: right;">
+                <select name="select_theme" id="select_theme">
+                    <option selected>default</option>
+                    <option>erlang-dark</option>
+                    <option>material</option>
+                </select>
+            </div>
+        </legend>
+    </fieldset>
+    <form class="layui-form " action="">
+        <input type="hidden" name="hidden_syntax" id="hidden_syntax" value="">
+        <div style="display: none;" name="hidden_default_text" id="hidden_default_text">if ('this_is'==/an_example/){of_beautifier();}else{var a=b?(c%d):e[f];}</div>
+        <div class="layui-form-item layui-form-text">
+            <div class="layui-row">
+                <div class="layui-col-xs12">
+                    <div style="line-height: 0">
+                        <textarea id="source" style="height:280px;" rows="20" cols="160"></textarea>
+                        <center>
+                            <button class="layui-btn  submit" type="button"><strong>Усовершенствовать JavaScript or HTML</strong> <em>(ctrl-enter)</em></button>
+                            <button class="layui-btn " type="button" id="btn_compress">
+                                <strong>Минифицировать код</strong>
+                            </button>
+                        </center>
+                    </div>
+                    <div id="testresults"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="../layui/layui.js"></script>
+    <script src="../renderer-process/requestJS.js"></script>
+    <script type="text/javascript" src="../renderer-process/popup.js"></script>
+    <script type="text/javascript" src="../renderer-process/extentFunction.js"></script>
+    <script type="text/javascript" src="../renderer-process/codemirror-init.js"></script>
+</body>
+
+</html>

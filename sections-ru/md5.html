@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>MD5</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script type="text/javascript" src="../renderer-process/popup.js"></script>
+    <script type="text/javascript" src="../renderer-process/extentFunction.js"></script>
+</head>
+
+<body>
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>MD5 шифрование</legend>
+    </fieldset>
+    <form class="layui-form " action="">
+        <input type="hidden" name="hidden_type" value="MD5">
+        <div class="layui-form-item layui-form-text">
+            <div class="layui-row">
+                <div class="layui-col-xs6">
+                    <textarea width="97%" placeholder="Введите содержание..." class="layui-textarea" required lay-verify="required" lay-verType="msg" style="height:280px;" id="origin_content" name="origin_content"></textarea>
+                </div>
+                <div class="layui-col-xs6">
+                    <textarea width="97%" placeholder="Результат" class="layui-textarea" style="height:280px;" id="result_content" name="result_content"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item " style="margin-bottom: 5px;text-align: center;">
+            <button type="button" class="layui-btn" data-func="crypto.getMD5" lay-submit="" lay-filter="btn_submit" id="btn_md5_encode"> Шифрование</button>
+            <button type="button" class="layui-btn" id="btn_md5_clear" onclick="clearContent();">Очистить</button>
+        </div>
+    </form>
+    <script src="../layui/layui.js"></script>
+    <script src="../renderer-process/requestJS.js"></script>
+</body>
+
+</html>
