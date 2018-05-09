@@ -194,6 +194,9 @@ layui.use(['element'], function() {
             language = othis.data('language');
              var location = window.location;
         switch (language) {
+            case "ru":
+                location.href = "index-ru.html"
+                break;
             case "us":
                 location.href = "index-us.html"
                 break;
