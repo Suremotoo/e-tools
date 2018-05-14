@@ -21,6 +21,11 @@
   <a href="https://github.com/Suremotoo/e-tools">
     <img src="https://img.shields.io/github/downloads/Suremotoo/e-tools/total.svg" alt="total download">
   </a>
+  
+   <!-- languages -->
+  <a href="https://github.com/Suremotoo/e-tools">
+  <img src="https://img.shields.io/badge/languages-%E4%B8%AD%E6%96%87%7CEnglish%7C%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA-green.svg" alt="languages">
+  </a>
 </div>
 
 
