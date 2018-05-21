@@ -38,7 +38,7 @@
 
 [![Releases](https://img.shields.io/conda/pn/conda-forge/python.svg?style=for-the-badge)](https://github.com/Suremotoo/e-tools/releases)
 
-## Keymaps
+## Search/Replace Keymaps
 
 | Functionality      | ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png)   |  ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-pass-sm.png)   |
 | --------   | -----:  |  -----:  |
