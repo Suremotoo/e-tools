@@ -38,6 +38,18 @@
 
 [![Releases](https://img.shields.io/conda/pn/conda-forge/python.svg?style=for-the-badge)](https://github.com/Suremotoo/e-tools/releases)
 
+## Keymaps
+
+| Functionality      | ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png)   |  ![]( https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-pass-sm.png)   |
+| --------   | -----:  |  -----:  |
+| Start searching     |  Ctrl-F  |  Cmd-F  |
+| Find next        |   Ctrl-G  |  Cmd-G   |
+| Find previous        |    Shift-Ctrl-G  | Shift-Cmd-G  |
+| Find next        |   Ctrl-G  |  Cmd-G   |
+| Replace        |   Shift-Ctrl-F  |  Cmd-Option-F   |
+| Replace all        |   Shift-Ctrl-R  |  Shift-Cmd-Option-F   |
+| Jump to line        |   Alt-G   | Option-G 
+| Persistent search (dialog doesn't autoclose:<br> **enter** to find next, <br>**Shift-Enter** to find previous)       |   Alt-F   | Option-F |
 
 
 ## Development
