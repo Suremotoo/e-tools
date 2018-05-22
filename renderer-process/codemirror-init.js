@@ -172,7 +172,8 @@ try {
                 theme: 'default',
                 matchBrackets: true,
                 styleActiveLine: true,
-                lineNumbers: true
+                lineNumbers: true,
+                extraKeys: {"Alt-F": "findPersistent"}
             });
             the.editor.focus();
 
