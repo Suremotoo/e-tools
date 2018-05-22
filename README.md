@@ -7,6 +7,9 @@
 </div>
 
 <div align="center">
+  <!-- FOSSA Status -->
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_shield)
+
   <!-- License -->
  <a href="https://github.com/Suremotoo/e-tools">
     <img src="https://img.shields.io/github/license/Suremotoo/e-tools.svg" alt="License">
@@ -34,13 +37,10 @@
 ![English](https://github.com/Suremotoo/e-tools/blob/master/assets/img/us-screenshot.png)
 
 
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_large)
-
 ## Download and Install
 
 [![Releases](https://img.shields.io/conda/pn/conda-forge/python.svg?style=for-the-badge)](https://github.com/Suremotoo/e-tools/releases)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_shield)
+
 
 ## Search/Replace Keymaps
 
@@ -53,7 +53,7 @@
 | Replace        |   Shift-Ctrl-F  |  Cmd-Option-F   |
 | Replace all        |   Shift-Ctrl-R  |  Shift-Cmd-Option-F   |
 | Jump to line        |   Alt-G   | Option-G 
-| Persistent search (dialog doesn't autoclose:<br> **enter** to find next, <br>**Shift-Enter** to find previous)       |   Alt-F   | Option-F |
+| Persistent search (dialog doesn't autoclose:<br> **enter** to find next, <br>**Shift-Enter** to find previous)       |   ~~Alt-F~~   | ~~Option-F~~ |
 
 
 ## Development
@@ -68,4 +68,4 @@ If you wish to build **E-tools** yourself:
 
 ## License
 
-[**MIT**](https://github.com/Suremotoo/e-tools/blob/master/LICENSE)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_large)
