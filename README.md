@@ -8,7 +8,7 @@
 
 <div align="center">
   <!-- FOSSA Status -->
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_shield)
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=shield"/></a>
 
   <!-- License -->
  <a href="https://github.com/Suremotoo/e-tools">
