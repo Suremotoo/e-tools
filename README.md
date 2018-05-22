@@ -34,9 +34,13 @@
 ![English](https://github.com/Suremotoo/e-tools/blob/master/assets/img/us-screenshot.png)
 
 
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_large)
+
 ## Download and Install
 
 [![Releases](https://img.shields.io/conda/pn/conda-forge/python.svg?style=for-the-badge)](https://github.com/Suremotoo/e-tools/releases)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_shield)
 
 ## Search/Replace Keymaps
 
@@ -65,4 +69,3 @@ If you wish to build **E-tools** yourself:
 ## License
 
 [**MIT**](https://github.com/Suremotoo/e-tools/blob/master/LICENSE)
-
