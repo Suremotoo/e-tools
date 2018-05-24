@@ -14,10 +14,9 @@
 
 .CodeMirror {
     font-size: 15px;
-    font-family: 'Ubuntu Mono', monospace, monaco, "lucida console", "courier new" ;
+    font-family: 'Ubuntu Mono', monospace, monaco, "lucida console", "courier new" !important;
     font-weight: 400;
     line-height: 1.4375;
-    background: 0 0
 }
 
 .CodeMirror pre {
