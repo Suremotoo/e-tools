@@ -53,7 +53,7 @@
 | Replace        |   Shift-Ctrl-F  |  Cmd-Option-F   |
 | Replace all        |   Shift-Ctrl-R  |  Shift-Cmd-Option-F   |
 | Jump to line        |   Alt-G   | Option-G 
-| Persistent search (dialog doesn't autoclose:<br> **enter** to find next, <br>**Shift-Enter** to find previous)       |   ~~Alt-F~~   | ~~Option-F~~ |
+| Persistent search (dialog doesn't autoclose:<br> **enter** to find next, <br>**Shift-Enter** to find previous)       |   Alt-F   | Option-F |
 
 
 ## Development
