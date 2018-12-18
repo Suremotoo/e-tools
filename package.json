@@ -7,13 +7,19 @@
     "start": "electron .",
     "dev": "electron . --debug",
     "test": "mocha && standard",
+    "pack": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder --dir",
+    "pack:all": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder --platform=all",
+    "dist": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder",
+    "dist:mac": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder -m",
+    "dist:win": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder -w",
+    "dist:linux": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder -l",
     "package": "npm-run-all package:*",
-    "package:mac": "electron-packager ./app --overwrite --platform=darwin --arch=x64 --out=out --icon=assets/app-icon/mac/app.icns --osx-sign.identity='Developer ID Application: GitHub'",
-    "package:win": "electron-packager ./app --overwrite --platform=win32 --arch=ia32 --out=out --icon=assets/app-icon/win/app.ico",
+    "package:mac": "electron-packager ./app --overwrite --platform=darwin --arch=x64 --out=out --icon=app/assets/app-icon/mac/app.icns --osx-sign.identity='Developer ID Application: GitHub'",
+    "package:win": "electron-packager ./app --overwrite --platform=win32 --arch=ia32 --out=out --icon=app/assets/app-icon/win/app.ico",
     "package:linux": "electron-packager ./app --overwrite --platform=linux --arch=x64 --out=out",
-    "package:sign-exe": "signcode './out/Electron API Demos-win32-ia32/Electron API Demos.exe' --cert ~/electron-api-demos.p12 --prompt --name 'Electron API Demos' --url 'http://electron.atom.io'",
+    "package:sign-exe": "signcode './out/E-tools-win32-ia32/e-tools.exe' --cert ~/e-tools.p12 --prompt --name 'E-tools' --url 'http://blog.suremotoo.site/e-tools/'",
     "package:installer": "node ./script/installer.js",
-    "package:sign-installer": "signcode './out/windows-installer/ElectronAPIDemosSetup.exe' --cert ~/electron-api-demos.p12 --prompt --name 'Electron API Demos' --url 'http://electron.atom.io'",
+    "package:sign-installer": "signcode './out/windows-installer/EtoolsSetup.exe' --cert ~/E-tools.p12 --prompt --name 'E-tools' --url 'http://blog.suremotoo.site/e-tools/'",
     "package:mas": "./script/mas.sh",
     "windows-store": "node ./script/windows-store.js",
     "release": "node ./script/release.js"
@@ -28,17 +34,34 @@
     "tools"
   ],
   "author": "Suremotoo",
+  "email": "suremotoo@163.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Suremotoo/e-tools/issues"
   },
   "homepage": "https://github.com/Suremotoo/e-tools#readme",
+  "build": {
+    "appId": "site.suremotoo.e-tools",
+    "copyright": "Suremotoo",
+    "productName": "E-tools",
+    "dmg": {},
+    "mac": {
+      "icon": "assets/app-icon/mac/app.icns"
+    },
+    "win": {
+      "icon": "assets/app-icon/win/app.ico"
+    },
+    "linux": {
+      "icon": "assets/app-icon/png/1024.png"
+    }
+  },
   "devDependencies": {
     "electron": "^1.8.4"
   },
   "dependencies": {
     "express": "^4.16.3",
     "glob": "^7.1.2",
+    "electron-packager": "^12.0.1",
     "sql-formatter": "^2.3.0"
   }
 }
