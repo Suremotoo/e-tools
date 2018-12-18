@@ -6,6 +6,9 @@ const glob = require('glob')
 const debug = /--debug/.test(process.argv[2])
 const autoUpdater = require('./auto-updater')
 
+const Store = require('electron-store');
+const store = new Store();
+
 
 // 保持一个对于 window 对象的全局引用，如果你不这样做，
 // 当 JavaScript 对象被垃圾回收， window 会被自动地关闭
@@ -35,9 +38,23 @@ function initialize() {
 
         mainWindow = new BrowserWindow(windowOptions);
 
+        let getLocalLanguagueSetting = "index.html";
+        let _let_language = store.get('languageStore');
+        switch (_let_language) {
+            case "ru":
+                getLocalLanguagueSetting = "index-ru.html"
+                break;
+            case "us":
+                getLocalLanguagueSetting = "index-us.html"
+                break;
+            case "cn":
+                getLocalLanguagueSetting = "index.html"
+                break;
+        }
+
         // 然后加载应用的 index.html。
         mainWindow.loadURL(url.format({
-            pathname: path.join(__dirname, 'index.html'),
+            pathname: path.join(__dirname, getLocalLanguagueSetting),
             protocol: 'file:',
             slashes: true
         }))
@@ -64,6 +81,7 @@ function initialize() {
             // const message = `大小: ${mainWindow.getSize()} - 位置: ${mainWindow.getPosition()}`
             // console.log("mainWindow：" + message);
         }
+
     }
 
 
