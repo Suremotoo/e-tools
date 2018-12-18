@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="../layui/css/layui.css">
     <script type="text/javascript" src="../renderer-process/popup.js"></script>
     <script type="text/javascript" src="../renderer-process/extentFunction.js"></script>
+<style type="text/css">
+    .layui-body {
+        overflow-y: scroll;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+
+</style>
 </head>
 
 <body>
@@ -46,7 +56,7 @@
         <div class="layui-form-item layui-form-text">
             <div class="layui-row">
                 <div class="layui-col-xs6">
-                    <textarea width="97%" placeholder="请输入内容" class="layui-textarea" lay-verify="required" lay-verType="msg" style="height:240px;" id="origin_content" name="origin_content"></textarea>
+                    <textarea id="testTextarea" width="97%" height="100%" placeholder="请输入内容" class="layui-textarea" lay-verify="required" lay-verType="msg" style="height:240px;" id="origin_content" name="origin_content"></textarea>
                 </div>
                 <div class="layui-col-xs6">
                     <textarea width="97%" placeholder="加密/解密结果" class="layui-textarea" style="height:240px;" id="result_content" name="result_content"></textarea>

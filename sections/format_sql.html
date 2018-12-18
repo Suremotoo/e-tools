@@ -153,6 +153,30 @@
 
         });
     </script>
+    <script>
+        window.onresize = function () {
+            resizeContentSize()
+        } // 页面初始化就调整高度
+        window.onload = function () {
+            resizeContentSize()
+        }
+
+        function resizeContentSize() {
+            var _TextareaArr = document.getElementsByClassName("CodeMirror");
+            var tempTextarea = _TextareaArr[0];
+            var areaHeight = tempTextarea.offsetHeight;
+            var bodyHeight = document.body.clientHeight;
+            var per = areaHeight / bodyHeight; // 窗口大小事件监控
+            var currBoxHeight = document.documentElement.clientHeight;
+            //获取当前容器的高度
+            temp_box_height = currBoxHeight;
+            for (let index = 0; index < _TextareaArr.length; index++) {
+                const element = _TextareaArr[index];
+                element.style.height = (currBoxHeight *
+                    per) - 10 + 'px';
+            }
+        }
+    </script>
 </body>
 
 </html>

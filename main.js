@@ -22,8 +22,9 @@ function initialize() {
     function createWindow() {
         var windowOptions = {
             width: 1188,
-            minWidth: 680,
-            height: 600,
+            minWidth: 880,
+            height: 650,
+            minHeight: 450,
             title: app.getName()
         }
 
@@ -56,6 +57,13 @@ function initialize() {
         mainWindow.on('closed', function() {
             mainWindow = null
         })
+
+        mainWindow.on('resize', updateReply);
+
+        function updateReply() {
+            // const message = `大小: ${mainWindow.getSize()} - 位置: ${mainWindow.getPosition()}`
+            // console.log("mainWindow：" + message);
+        }
     }
 
 

@@ -38,7 +38,8 @@
     </fieldset>
     <form class="layui-form " action="">
         <input type="hidden" name="hidden_syntax" id="hidden_syntax" value="">
-        <div style="display: none;" name="hidden_default_text" id="hidden_default_text">{ name: 'suremotoo', hobbies: [ 'sleep', 'eat' ] }</div>
+        <div style="display: none;" name="hidden_default_text" id="hidden_default_text">{ name: 'suremotoo', hobbies: [
+            'sleep', 'eat' ] }</div>
         <div class="layui-form-item layui-form-text">
             <div class="layui-row">
                 <div class="layui-col-xs12">
@@ -61,6 +62,30 @@
     <script type="text/javascript" src="../renderer-process/popup.js"></script>
     <script type="text/javascript" src="../renderer-process/extentFunction.js"></script>
     <script type="text/javascript" src="../renderer-process/codemirror-init.js"></script>
+    <script>
+        window.onresize = function () {
+            resizeContentSize()
+        } // 页面初始化就调整高度
+        window.onload = function () {
+            resizeContentSize()
+        }
+
+        function resizeContentSize() {
+            var _TextareaArr = document.getElementsByClassName("CodeMirror");
+            var tempTextarea = _TextareaArr[0];
+            var areaHeight = tempTextarea.offsetHeight;
+            var bodyHeight = document.body.clientHeight;
+            var per = areaHeight / bodyHeight; // 窗口大小事件监控
+            var currBoxHeight = document.documentElement.clientHeight;
+            //获取当前容器的高度
+            temp_box_height = currBoxHeight;
+            for (let index = 0; index < _TextareaArr.length; index++) {
+                const element = _TextareaArr[index];
+                element.style.height = (currBoxHeight *
+                per) - 10 + 'px';
+            }
+        }
+    </script>
 </body>
 
 </html>
