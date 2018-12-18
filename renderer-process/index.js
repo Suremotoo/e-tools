@@ -1,6 +1,8 @@
 const shell = require('electron').shell
 const path = require('path')
 const url = require('url')
+const Store = require('electron-store');
+const store = new Store();
 
 layui.use(['element'], function() {
     var $ = layui.jquery,
@@ -193,6 +195,7 @@ layui.use(['element'], function() {
         var othis = $(this),
             language = othis.data('language');
              var location = window.location;
+             store.set("languageStore", language);
         switch (language) {
             case "ru":
                 location.href = "index-ru.html"

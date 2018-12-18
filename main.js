@@ -40,6 +40,7 @@ function initialize() {
 
         let getLocalLanguagueSetting = "index.html";
         let _let_language = store.get('languageStore');
+        console.log(_let_language);
         switch (_let_language) {
             case "ru":
                 getLocalLanguagueSetting = "index-ru.html"
