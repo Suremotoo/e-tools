@@ -12,19 +12,19 @@
 
   <!-- License -->
  <a href="https://github.com/Suremotoo/e-tools">
-    <img src="https://img.shields.io/github/license/Suremotoo/e-tools.svg" alt="License">
+​    <img src="https://img.shields.io/github/license/Suremotoo/e-tools.svg" alt="License">
   </a>
 
   <!-- Platform -->
   <a href="https://github.com/Suremotoo/e-tools">
-    <img src="https://img.shields.io/badge/platform-MacOS%7CWindows%7CLinux-orange.svg" alt="platform">
+​    <img src="https://img.shields.io/badge/platform-MacOS%7CWindows%7CLinux-orange.svg" alt="platform">
   </a>
-  
+
    <!-- Downloads total -->
   <a href="https://github.com/Suremotoo/e-tools">
-    <img src="https://img.shields.io/github/downloads/Suremotoo/e-tools/total.svg" alt="total download">
+​    <img src="https://img.shields.io/github/downloads/Suremotoo/e-tools/total.svg" alt="total download">
   </a>
-  
+
    <!-- languages -->
   <a href="https://github.com/Suremotoo/e-tools">
   <img src="https://img.shields.io/badge/languages-%E4%B8%AD%E6%96%87%7CEnglish%7C%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA-green.svg" alt="languages">
@@ -35,6 +35,8 @@
 ![中文](https://raw.githubusercontent.com/Suremotoo/e-tools/master/assets/img/screenshot.png)
 
 ![English](https://raw.githubusercontent.com/Suremotoo/e-tools/master/assets/img/us-screenshot.png)
+
+![русский](https://raw.githubusercontent.com/Suremotoo/e-tools/master/assets/img/ru-screenshot.png)
 
 
 ## Download and Install
