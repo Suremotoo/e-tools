@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/Suremotoo/e-tools/blob/master/assets/app-icon/png/512.png" alt="E-tools" width="100" height="100"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Suremotoo/e-tools/master/assets/app-icon/png/512.png" alt="E-tools" width="100" height="100"></p>
 
 <h1 align="center">E-tools</h1>
 
@@ -32,9 +32,9 @@
 </div>
 
 
-![中文](https://github.com/Suremotoo/e-tools/blob/master/assets/img/screenshot.png)
+![中文](https://raw.githubusercontent.com/Suremotoo/e-tools/master/assets/img/screenshot.png)
 
-![English](https://github.com/Suremotoo/e-tools/blob/master/assets/img/us-screenshot.png)
+![English](https://raw.githubusercontent.com/Suremotoo/e-tools/master/assets/img/us-screenshot.png)
 
 
 ## Download and Install
