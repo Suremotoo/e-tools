@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-tools - Offline tools</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A toolbox for developers. Color picker, code formatter, and more.">
+    <meta name="keywords" content="desktop,application,github,electron,open source,suremotoo,mac,osx">
+    <meta name="author" content="Suremotoo">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/loaderskit.css">
+    <link rel="icon" type="image/png" href="static/images/logo-white.png">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <a href="https://github.com/Suremotoo/e-tools" target="_blank" class="github-corner">
+      <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#3f4351; color:#fff; position: absolute; top: 0; border: 0; right: 0;">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+      </svg>
+    </a>
+    <div class="container-fluid header">
+        <div class="jumbotron">
+            <img class="img-fluid logo mx-auto" src="static/images/logo-white.png" alt="E-tools - A toolbox for developers. Color picker, code formatter, and more." />
+            <h2 class="site-title">A toolbox for developers. Color picker, code formatter, and more.</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 desktop">
+                    <img class="img-fluid screenshot" id="screenshot" src="static/images/desktop-mockup.jpg" alt="E-tools Desktop App" />
+                    <div class="coffee_cup" id="coffee-loading"></div>
+                    <div class="text-center latest-version">
+                        <a class="btn btn-success mb-3 px-3 py-2 mr-4" id="download-mac" href="#">
+            <i class="fa fa-cloud-download mr-2"></i> Mac OSX
+          </a>
+                        <a class="btn btn-success mb-3 px-3 py-2 mr-4" id="download-linux" href="#">
+            <i class="fa fa-cloud-download mr-2"></i> Linux
+          </a>
+                        <a class="btn btn-success mb-3 px-3 py-2 mr-4" id="download-windows" href="#">
+            <i class="fa fa-cloud-download mr-2"></i> Windows
+          </a>
+                        <div>
+                            <div class="version"><span></span>.</div>
+                            <div class="date">Released on <span></span>.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-4  desktop">
+                   
+                    <img class="img-fluid screenshot" id="screenshot" src="static/images/desktop-mockup.png" alt="E-tools Desktop App" />
+                    <div class="text-center latest-version">
+                        <a class="btn btn-success mb-3 px-3 py-2" id="download-apple" href="#">
+            <i class="fa fa-cloud-download mr-2"></i> Windows
+          </a>
+                        <div>
+                            <div class="version"><span></span>.</div>
+                            <div class="date">Released on <span></span>.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  desktop">
+                   
+                    <img class="img-fluid screenshot" id="screenshot" src="static/images/desktop-mockup.png" alt="E-tools Desktop App" />
+                    <div class="text-center latest-version">
+                        <a class="btn btn-success mb-3 px-3 py-2" id="download-apple" href="#">
+            <i class="fa fa-cloud-download mr-2"></i> Linux
+          </a>
+                        <div>
+                            <div class="version"><span></span>.</div>
+                            <div class="date">Released on <span></span>.</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="row">
+                <div class="col-md-4  desktop">
+                    <div class="text-center latest-version">
+                        <a class="btn btn-success mb-3 px-3 py-2" id="download-apple" href="#">
+            <i class="fa fa-cloud-download mr-2"></i> Windows
+          </a>
+                        <div>
+                            <div class="version"><span></span>.</div>
+                            <div class="date">Released on <span></span>.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  desktop">
+                    <div class="text-center latest-version">
+                        <a class="btn btn-success mb-3 px-3 py-2" id="download-apple" href="#">
+            <i class="fa fa-cloud-download mr-2"></i> Windows
+          </a>
+                        <div>
+                            <div class="version"><span></span>.</div>
+                            <div class="date">Released on <span></span>.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  desktop">
+                    <div class="text-center latest-version">
+                        <a class="btn btn-success mb-3 px-3 py-2" id="download-apple" href="#">
+            <i class="fa fa-cloud-download mr-2"></i> Linux
+          </a>
+                        <div>
+                            <div class="version"><span></span>.</div>
+                            <div class="date">Released on <span></span>.</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="container section" id="section1">
+        <div class="row">
+            <div class="col-md-7">
+                <h3>Features. Nice & Easy & Quickly.</h3>
+                <p class="lead">
+                    <ol>
+                        <li>E-tools is now translated to the following 3 languages: Simplified Chinese, Russian and English. By default, E-tools picks up the Simplified Chinese & Always remember the last selected language.</li>
+                        <li>Json、HTML、SQL Format & Compress, Base64 md5 uri Encode/Decode</li>
+                        <li>RGB HEX CSS transform, Color constant, Color picker</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="col-md-4 col-md-offset-1"><img class="img-fluid screenshot" src="static/images/intro-concept-languages.jpg" alt="E-tools App" /></div>
+            </div>
+        </div>
+        <div class="section alt container-fluid" id="section2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid screenshot" src="static/images/electron.png" alt="Your Preferences, Settings" />
+                    </div>
+                        <div class="col-md-7 col-md-offset-1">
+                            <h3>Under the hood.</h3>
+                            <p class="lead">
+                                E-tools is a desktop application built with HTML, JavaScript, CSS, and Node.js integration. It runs on <a href="http://electron.atom.io/" target="_blank">Electron</a>, a framework for building cross platform apps using web technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container section" id="section3">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h3>Free & Open Source. Particularly grateful.</h3>
+                        <p class="lead">
+                            <a href="https://www.layui.com/" target="_blank">Layui</a>,<a href="http://codemirror.net/" target="_blank">CodeMirror</a> and more awesome open source libraries.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1"><img class="img-fluid screenshot" src="static/images/open-source.png" alt="Open Source - Electron, SASS, GitHub, Node JS." /></div>
+                    </div>
+                </div> -->
+                <div class="container-fluid footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10">
+                                <a href="http://e-tools.suremotoo.site" target="_blank">E-tools</a>
+                            </div>
+                            <div class="hidden-xs col-2 text-right">
+                                <a href="#" class="scroll-to-top"><i class="fa fa-chevron-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+                <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+                <script type="text/javascript" src="static/js/app.js"></script>
+</body>
+
+</html>
