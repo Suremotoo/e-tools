@@ -19,13 +19,12 @@ layui.use(['element'], function() {
                 type = othis.data('type'),
                 href = othis.data('href');
             id = othis.data('id');
-
             // var tab_content = '<object tab-id="'+id+'" type="text/html" data="' + href + '" width="100%" height="100%"></object>';
             var tab_content = '<iframe id="' + id + '" tab-id="' + id + '" frameborder="0" src="' + href + '"  width="100%" height="100%"></iframe>';
 
             //新增一个Tab项
             element.tabAdd('tab_filter', {
-                title: othis.text(),
+                title: othis.attr('title'),
                 content: tab_content,
                 id: id
             });

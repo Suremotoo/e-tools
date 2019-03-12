@@ -3,6 +3,7 @@
  */
 var crypto = require('../main-process/crypto.js') // 引入加密模块
 var sqlFormatter = require('sql-formatter'); // 引入 sql 格式化模块
+var UUID = require('uuid');
 var express = require('express'); //引入框架模块express
 
 var app = express(); //实例化（或者叫引用express）
@@ -29,20 +30,22 @@ console.log(__filename);
 app.get('/process_get', (req, res) => {
     console.log('主页 post请求'); //后台打印一个信息，表示正在执行
     var response = { //解码接收到的字符串，并存放在response对象（或者叫数组中）
-        // 'type': req.query.hidden_type,
+        'type': req.query.hidden_type,
         'func': req.query.func,
         'origin_content': req.query.origin_content // textarea 内容
     }
     console.log(req.query);
     var argName = response.origin_content;
     var function_name = response.func + '("' + argName + '")';
-
+    if (response.type === 'none_param') {
+        function_name = response.func;
+    }
     response.result_content = eval(function_name);
     res.write(JSON.stringify(response));
     res.end();
 })
 
-var server = app.listen(38664, function() { //监听38664port
+var server = app.listen(38664, function () { //监听38664port
     var host = server.address().adress;
     var port = server.address().port;
     console.log('应用实例，访问地址为 http://%s:%s', host, port);

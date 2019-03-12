@@ -158,7 +158,7 @@ function looks_like_html(source) {
 
 
 try {
-    $(function() {
+    $(function () {
 
         read_settings_from_cookie();
 
@@ -173,22 +173,24 @@ try {
                 matchBrackets: true,
                 styleActiveLine: true,
                 lineNumbers: true,
-                extraKeys: {"Alt-F": "findPersistent"}
+                extraKeys: {
+                    "Alt-F": "findPersistent"
+                }
             });
             the.editor.focus();
 
             the.editor.setValue(default_text);
-            $('.CodeMirror').click(function() {
+            $('.CodeMirror').click(function () {
                 if (the.editor.getValue() == default_text) {
                     the.editor.setValue('');
                 }
             });
         } else {
-            $('#source').val(default_text).bind('click focus', function() {
+            $('#source').val(default_text).bind('click focus', function () {
                 if ($(this).val() == default_text) {
                     $(this).val('');
                 }
-            }).bind('blur', function() {
+            }).bind('blur', function () {
                 if (!$(this).val()) {
                     $(this).val(default_text);
                 }
@@ -196,7 +198,7 @@ try {
         }
 
 
-        $(window).bind('keydown', function(e) {
+        $(window).bind('keydown', function (e) {
             if (e.ctrlKey && e.keyCode == 13) {
                 beautify();
             }
@@ -220,7 +222,7 @@ try {
             input.value = choice;
             editor.setOption("theme", choice);
         }
-        CodeMirror.on(window, "hashchange", function() {
+        CodeMirror.on(window, "hashchange", function () {
             var theme = location.hash.slice(1);
             if (theme) {
                 input.value = theme;
@@ -267,8 +269,28 @@ try {
             }
         }
 
+        var btn_xml_parser = document.getElementById("btn_xml_parser");
+        if (btn_xml_parser) {
+            btn_xml_parser.onclick = () => {
+                try {
+                    var xmlHeader = '<?xml version="1.0" encoding="UTF-8"?>\n';
+                    editor.setValue(xmlHeader + $.json2xml(JSON.parse(editor.getValue().replace('/* This is just a sample demo. Paste your real code here. */', ''))));       
+                } catch (error) {
+                    
+                }
+            }
+        }
 
-        editor.on("change", function(instance, obj) {
+        // json 转 xml方法，暂未测试通过，保留
+        /* var btn_json_parser = document.getElementById("btn_json_parser");
+        if (btn_json_parser) {
+            btn_json_parser.onclick = () => {
+                editor.setValue($.xml2json(editor.getValue()));
+            }
+        } */
+
+
+        editor.on("change", function (instance, obj) {
             // $('#origin_content').val(editor.getValue().split("\n").join(" ").replace(/\s+/g, " "));
             $('#origin_content').val(editor.getValue());
         });

@@ -15,17 +15,17 @@
         <div class="layui-header">
             <div class="layui-logo">E-tools 工具集合</div>
             <ul class="layui-nav layui-layout-right">
-                  <li class="layui-nav-item">
+                <li class="layui-nav-item">
                     <a href="javascript:;">
-                        <i class="layui-icon layui-nav-img"  style="font-size: 16px; color: #1E9FFF;">&#xe614;</i>   
-                      切换语言
+                        <i class="layui-icon layui-nav-img" style="font-size: 16px; color: #1E9FFF;">&#xe614;</i>
+                        切换语言
                     </a>
                     <dl class="layui-nav-child" id="select_language">
-                      <dd><a href="javascript:;" data-language="ru"><img src="assets/img/flags/rus.png"> 俄语</a></dd>
-                      <dd><a href="javascript:;" data-language="us"><img src="assets/img/flags/usa.png"> 英语</a></dd>
+                        <dd><a href="javascript:;" data-language="ru"><img src="assets/img/flags/rus.png"> 俄语</a></dd>
+                        <dd><a href="javascript:;" data-language="us"><img src="assets/img/flags/usa.png"> 英语</a></dd>
                     </dl>
-                  </li>
-             </ul>
+                </li>
+            </ul>
         </div>
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
@@ -34,10 +34,10 @@
                     <li class="layui-nav-item layui-nav-itemed">
                         <a class="" href="javascript:;">加密解密</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/md5.html" data-id="11">MD5</a></dd>
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/base64.html" data-id="12">Base64</a></dd>
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/escape.html" data-id="13">Escape</a></dd>
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/sha1.html" data-id="14">Sha1</a></dd>
+                            <dd><a href="javascript:;" title="MD5" data-type="tabAdd" data-href="sections/md5.html" data-id="11">MD5</a></dd>
+                            <dd><a href="javascript:;" title="Base64" data-type="tabAdd" data-href="sections/base64.html" data-id="12">Base64</a></dd>
+                            <dd><a href="javascript:;" title="Escape" data-type="tabAdd" data-href="sections/escape.html" data-id="13">Escape</a></dd>
+                            <dd><a href="javascript:;" title="Sha1" data-type="tabAdd" data-href="sections/sha1.html" data-id="14">Sha1</a></dd>
                         </dl>
                     </li>
                     <!-- <li class="layui-nav-item">
@@ -50,16 +50,18 @@
                     <li class="layui-nav-item  layui-nav-itemed">
                         <a href="javascript:;">代码格式化</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/format_json.html" data-id="30">JSON</a></dd>
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/format_html.html" data-id="31">HTML</a></dd>
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/format_sql.html" data-id="32">SQL</a></dd>
+                            <dd><a href="javascript:;" title="JSON 格式化" data-type="tabAdd" data-href="sections/format_json.html" data-id="30">JSON</a></dd>
+                            <dd><a href="javascript:;" title="HTML 格式化" data-type="tabAdd" data-href="sections/format_html.html" data-id="31">HTML</a></dd>
+                            <dd><a href="javascript:;" title="SQL 格式化" data-type="tabAdd" data-href="sections/format_sql.html" data-id="32">SQL</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item  layui-nav-itemed">
                         <a href="javascript:;">文档资料</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/doc_http.html" data-id="40">HTTP状态码</a></dd>
-                            <dd><a href="javascript:;" data-type="tabAdd" data-href="sections/pickerColor.html" data-id="41">颜色选择器</a></dd>
+                            <dd><a href="javascript:;" title="HTTP 状态码" data-type="tabAdd" data-href="sections/doc_http.html" data-id="40">HTTP状态码</a></dd>
+                            <dd><a href="javascript:;" title="颜色选择器" data-type="tabAdd" data-href="sections/pickerColor.html" data-id="41">颜色选择器</a></dd>
+                            <dd><a href="javascript:;" title="生成 UUID" data-type="tabAdd" data-href="sections/generate_uuid.html"
+                                    data-id="42">生成UUID</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -84,28 +86,35 @@
                                     <div class="layui-col-xs12">
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" data-type="tabAdd" data-href="sections/md5.html" data-id="11" class="item-icon" title="MD5加密">
-                    <img alt="MD5加密" src="assets/img/unlock-icon-1.png">
-                    </a>
-                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/md5.html" data-id="11" class="item-icon" title="MD5加密" target="_blank" title="MD5加密">MD5</a></h3>
+                                                <a href="javascript:" data-type="tabAdd" data-href="sections/md5.html"
+                                                    data-id="11" class="item-icon" title="MD5">
+                                                    <img alt="MD5加密" title="MD5" src="assets/img/unlock-icon-1.png">
+                                                </a>
+                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/md5.html"
+                                                        data-id="11" class="item-icon" title="MD5" target="_blank"
+                                                        title="MD5">MD5</a></h3>
                                                 <div class="item-desc">MD5加密</div>
                                             </div>
                                         </div>
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" data-type="tabAdd" data-href="sections/base64.html" data-id="12" class="item-icon" title="Base64加密解密">
-                   <img alt="Base64加密解密" src="assets/img/unlock-icon.png">
-                </a>
-                                                <h3><a href="javascript:"  data-type="tabAdd" data-href="sections/base64.html" data-id="12" target="_blank" title="Base64加密解密">Base64</a></h3>
+                                                <a href="javascript:" data-type="tabAdd" data-href="sections/base64.html"
+                                                    data-id="12" class="item-icon" title="Base64">
+                                                    <img alt="Base64加密解密" src="assets/img/unlock-icon.png">
+                                                </a>
+                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/base64.html"
+                                                        data-id="12" target="_blank" title="Base64">Base64</a></h3>
                                                 <div class="item-desc">Base64加密解密</div>
                                             </div>
                                         </div>
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" class="item-icon" title="Escape" data-type="tabAdd" data-href="sections/escape.html" data-id="13">
-                   <img alt="Escape" src="assets/img/unlock-icon.png">
-                </a>
-                                                <h3><a href="javascript:" target="_blank" title="Escape"  data-type="tabAdd" data-href="sections/escape.html" data-id="13">Escape</a></h3>
+                                                <a href="javascript:" class="item-icon" title="Escape" data-type="tabAdd"
+                                                    data-href="sections/escape.html" data-id="13">
+                                                    <img alt="Escape" src="assets/img/unlock-icon.png">
+                                                </a>
+                                                <h3><a href="javascript:" target="_blank" title="Escape" data-type="tabAdd"
+                                                        data-href="sections/escape.html" data-id="13">Escape</a></h3>
                                                 <div class="item-desc">Escape加密解密</div>
                                             </div>
                                         </div>
@@ -115,10 +124,12 @@
                                     <div class="layui-col-xs3">
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" class="item-icon" title="sha" data-type="tabAdd" data-href="sections/sha1.html" data-id="14">
-                   <img alt="sha" src="assets/img/lock-icon.png">
-                </a>
-                                                <h3><a href="javascript:" target="_blank" title="sha"  data-type="tabAdd" data-href="sections/sha1.html" data-id="14">Sha</a></h3>
+                                                <a href="javascript:" class="item-icon" title="Sha1" data-type="tabAdd"
+                                                    data-href="sections/sha1.html" data-id="14">
+                                                    <img alt="sha" src="assets/img/lock-icon.png">
+                                                </a>
+                                                <h3><a href="javascript:" target="_blank" title="Sha1" data-type="tabAdd"
+                                                        data-href="sections/sha1.html" data-id="14">Sha</a></h3>
                                                 <div class="item-desc">SHA1、SHA256、SHA512加密</div>
                                             </div>
                                         </div>
@@ -131,28 +142,35 @@
                                     <div class="layui-col-xs12">
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" data-type="tabAdd" data-href="sections/format_json.html" data-id="30" class="item-icon" title="format_JSON">
-                    <img alt="format_JSON" src="assets/img/json-file.png">
-                    </a>
-                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/format_json.html" data-id="30"  class="item-icon" title="format_JSON" target="_blank" >JSON 格式化</a></h3>
+                                                <a href="javascript:" data-type="tabAdd" data-href="sections/format_json.html"
+                                                    data-id="30" class="item-icon" title="JSON 格式化">
+                                                    <img alt="format_JSON" src="assets/img/json-file.png">
+                                                </a>
+                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/format_json.html"
+                                                        data-id="30" class="item-icon" title="JSON 格式化" target="_blank">JSON
+                                                        格式化</a></h3>
                                                 <div class="item-desc"> JSON 格式化、颜色高亮、压缩</div>
                                             </div>
                                         </div>
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" data-type="tabAdd" data-href="sections/format_html.html" data-id="31" class="item-icon" title="format_HTML">
-                   <img alt="format_HTML" src="assets/img/html.png">
-                </a>
-                                                <h3><a href="javascript:"  data-type="tabAdd" data-href="sections/format_html.html" data-id="31"  target="_blank" title="format_HTML">HTML 格式化</a></h3>
+                                                <a href="javascript:" data-type="tabAdd" data-href="sections/format_html.html"
+                                                    data-id="31" class="item-icon" title="HTML 格式化">
+                                                    <img alt="format_HTML" src="assets/img/html.png">
+                                                </a>
+                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/format_html.html"
+                                                        data-id="31" target="_blank" title="HTML 格式化">HTML 格式化</a></h3>
                                                 <div class="item-desc">HTML 格式化、颜色高亮、压缩</div>
                                             </div>
                                         </div>
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" class="item-icon" title="format_SQL" data-type="tabAdd" data-href="sections/format_sql.html" data-id="32">
-                   <img alt="format_SQL" src="assets/img/sql.png">
-                </a>
-                                                <h3><a href="javascript:" target="_blank"   title="format_SQL"  data-type="tabAdd" data-href="sections/format_sql.html" data-id="32">SQL 格式化</a></h3>
+                                                <a href="javascript:" class="item-icon" title="SQL 格式化" data-type="tabAdd"
+                                                    data-href="sections/format_sql.html" data-id="32">
+                                                    <img alt="format_SQL" src="assets/img/sql.png">
+                                                </a>
+                                                <h3><a href="javascript:" target="_blank" title="SQL 格式化" data-type="tabAdd"
+                                                        data-href="sections/format_sql.html" data-id="32">SQL 格式化</a></h3>
                                                 <div class="item-desc"> SQL 格式化、颜色高亮、压缩</div>
                                             </div>
                                         </div>
@@ -165,21 +183,37 @@
                                     <div class="layui-col-xs12">
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" data-type="tabAdd" data-href="sections/doc_http.html" data-id="40" class="item-icon" title="doc_http">
-                    <img alt="doc_http" src="assets/img/404.png">
-                    <!-- <i class="layui-icon" style="font-size: 35px; color: #1E9FFF;">&#xe705;</i>   -->
-                    </a>
-                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/doc_http.html" data-id="40"  class="item-icon" title="doc_http" target="_blank" >HTTP状态码</a></h3>
+                                                <a href="javascript:" data-type="tabAdd" data-href="sections/doc_http.html"
+                                                    data-id="40" class="item-icon" title="HTTP状态码">
+                                                    <img alt="doc_http" src="assets/img/404.png">
+                                                    <!-- <i class="layui-icon" style="font-size: 35px; color: #1E9FFF;">&#xe705;</i>   -->
+                                                </a>
+                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/doc_http.html"
+                                                        data-id="40" class="item-icon" title="HTTP状态码" target="_blank">HTTP状态码</a>
+                                                </h3>
                                                 <div class="item-desc">常见 HTTP 状态码及解释</div>
                                             </div>
                                         </div>
                                         <div class="tool-item layui-anim layui-anim-scaleSpring">
                                             <div class="tool-item-inner">
-                                                <a href="javascript:" data-type="tabAdd" data-href="sections/pickerColor.html" data-id="41" class="item-icon" title="pickercolor">
-                   <img alt="pickercolor" src="assets/img/color.png">
-                </a>
-                                                <h3><a href="javascript:"  data-type="tabAdd" data-href="sections/pickerColor.html" data-id="41"  target="_blank" title="pickercolor">颜色选择器</a></h3>
+                                                <a href="javascript:" data-type="tabAdd" data-href="sections/pickerColor.html"
+                                                    data-id="41" class="item-icon" title="颜色选择器">
+                                                    <img alt="pickercolor" src="assets/img/color.png">
+                                                </a>
+                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/pickerColor.html"
+                                                        data-id="41" target="_blank" title="颜色选择器">颜色选择器</a></h3>
                                                 <div class="item-desc">颜色选择器,包括 RGB、HEX、HSV</div>
+                                            </div>
+                                        </div>
+                                        <div class="tool-item layui-anim layui-anim-scaleSpring">
+                                            <div class="tool-item-inner">
+                                                <a href="javascript:" data-type="tabAdd" data-href="sections/generate_uuid.html"
+                                                    data-id="42" class="item-icon" title="生成UUID">
+                                                    <img alt="pickercolor" src="assets/img/uuid.png">
+                                                </a>
+                                                <h3><a href="javascript:" data-type="tabAdd" data-href="sections/generate_uuid.html"
+                                                        data-id="42" target="_blank" title="生成UUID">生成UUID</a></h3>
+                                                <div class="item-desc">通用唯一识别码（Universally Unique Identifier）</div>
                                             </div>
                                         </div>
                                     </div>
@@ -187,32 +221,41 @@
                             </div>
                             <ul class="site-doc-color bottom-desc" id="introduce" style="margin-top: 2%;">
                                 <li style="background-color: #009688;">
-                                    <a href="javascript:" data-href="http://www.fengzao.top" class="item-icon" title="repo_url">
-                                     <img alt="repo_url" src="assets/img/home.png">
-                     </a>
+                                    <a href="javascript:" data-href="https://jienitudousi.github.io/" class="item-icon" title="repo_url">
+                                        <img alt="repo_url" src="assets/img/home.png">
+                                    </a>
                                     <p tips>Logo图标</p>
-                                    <p><h3>@杰尼龟</h3></p>
+                                    <p>
+                                        <h3>@杰尼龟</h3>
+                                    </p>
                                 </li>
                                 <li style="background-color: #5FB878;">
-                                    <a href="javascript:" data-href="https://github.com/Suremotoo/e-tools" class="item-icon" title="repo_github">
-                   <img alt="repo_github" src="assets/img/github.png">
-                </a>
+                                    <a href="javascript:" data-href="https://github.com/Suremotoo/e-tools" class="item-icon"
+                                        title="repo_github">
+                                        <img alt="repo_github" src="assets/img/github.png">
+                                    </a>
                                     <p tips>Github</p>
-                                    <p><h3>仓库地址</h3></p>
+                                    <p>
+                                        <h3>仓库地址</h3>
+                                    </p>
                                 </li>
                                 <li style="background-color: #393D49;">
                                     <a href="javascript:" data-href="http://jscolor.com/" class="item-icon" title="ref_jscolor">
-                   <img alt="ref_jscolor" src="assets/img/android-chrome-192x192.png">
-                </a>
+                                        <img alt="ref_jscolor" src="assets/img/android-chrome-192x192.png">
+                                    </a>
                                     <p tips>PickerColor</p>
-                                    <p><h3>jsColor</h3></p>
+                                    <p>
+                                        <h3>jsColor</h3>
+                                    </p>
                                 </li>
                                 <li style="background-color: #1E9FFF;">
                                     <a href="javascript:" data-href="http://codemirror.net/" class="item-icon" title="ref_codeMirror">
-                   <img alt="ref_codeMirror" src="assets/img/codeMirror-logo.png" >
-                </a>
+                                        <img alt="ref_codeMirror" src="assets/img/codeMirror-logo.png">
+                                    </a>
                                     <p tips>Code Editor</p>
-                                    <p><h3>CodeMirror</h3></p>
+                                    <p>
+                                        <h3>CodeMirror</h3>
+                                    </p>
                                 </li>
                             </ul>
                             <!-- end -->
@@ -228,8 +271,8 @@
     </div>
     <script src="layui/layui.js"></script>
     <script>
-    require('./renderer-process/index.js')
-    require('./renderer-process/server.js')
+        require('./renderer-process/index.js')
+        require('./renderer-process/server.js')
     </script>
 </body>
 <!--Tab菜单右键弹出菜单-->

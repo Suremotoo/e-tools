@@ -22,6 +22,8 @@
     <script src="../lib/jsbeautify/beautify.js"></script>
     <script src="../lib/jsbeautify/beautify-css.js"></script>
     <script src="../lib/jsbeautify/beautify-html.js"></script>
+    <script src="../lib/xml-js-paraser/xml2json.js"></script>
+    <script src="../lib/xml-js-paraser/json2xml.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
     </fieldset>
     <form class="layui-form " action="">
         <input type="hidden" name="hidden_syntax" id="hidden_syntax" value="">
-        <div style="display: none;" name="hidden_default_text" id="hidden_default_text">{ name: 'suremotoo', hobbies: [ 'sleep', 'eat' ] }</div>
+        <div style="display: none;" name="hidden_default_text" id="hidden_default_text">{"name":"suremotoo","hobbies":["sleep","eat"]}</div>
         <div class="layui-form-item layui-form-text">
             <div class="layui-row">
                 <div class="layui-col-xs12">
@@ -48,6 +50,9 @@
                             <button class="layui-btn  submit" type="button"><strong>Beautify JSON</strong> <em>(ctrl-enter)</em></button>
                             <button class="layui-btn " type="button" id="btn_compress" data-json="json">
                                 <strong>Compress Code</strong>
+                            </button>
+                            <button class="layui-btn " type="button" id="btn_xml_parser">
+                                <strong>To XML </strong>
                             </button>
                         </center>
                     </div>
