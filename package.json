@@ -1,6 +1,6 @@
 {
   "name": "E-tools",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "e-tools is an Open-Source project to support tools for desktop Mac, Windows, and Linux. ",
   "main": "main.js",
   "scripts": {
