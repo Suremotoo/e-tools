@@ -60,6 +60,7 @@ layui.use(['form', 'layer'], function () {
             "value": $(this).attr("data-func")
         });
         $.ajax({
+            type: "POST",
             data: reqData,
             url: 'http://127.0.0.1:38664/process_get',
             dataType: 'json',

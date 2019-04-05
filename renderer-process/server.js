@@ -5,9 +5,14 @@ var crypto = require('../main-process/crypto.js') // 引入加密模块
 var sqlFormatter = require('sql-formatter'); // 引入 sql 格式化模块
 var UUID = require('uuid');
 var express = require('express'); //引入框架模块express
+var bodyParser = require('body-parser');
 
 var app = express(); //实例化（或者叫引用express）
 
+//bodyParser API
+// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(express.static('../sections/')); //express.static('/')使用相对本文件路径下的静态资源，HTML，JAVASCRIPT等
 //简单一些就是在此文件中添加要使用的HTML、js、CSS等文件的存放路径
 
@@ -27,15 +32,15 @@ console.log(__filename);
 //req.query此属性直接存放的是接收到的表单数据（以关联数组的形式存在）
 //键是HTML表单中各元素的name，值是各元素的value
 //可对此属性进行解析
-app.get('/process_get', (req, res) => {
+app.post('/process_get', (req, res) => {
     console.log('主页 post请求'); //后台打印一个信息，表示正在执行
     var response = { //解码接收到的字符串，并存放在response对象（或者叫数组中）
-        'type': req.query.hidden_type,
-        'func': req.query.func,
-        'origin_content': req.query.origin_content // textarea 内容
+        'type': req.body.hidden_type,
+        'func': req.body.func,
+        'origin_content': req.body.origin_content // textarea 内容
     }
-    console.log(req.query);
-    var argName = response.origin_content;
+    console.log(req.body);
+    var argName = trans(response.origin_content);
     var function_name = response.func + '("' + argName + '")';
     if (response.type === 'none_param') {
         function_name = response.func;
@@ -45,8 +50,12 @@ app.get('/process_get', (req, res) => {
     res.end();
 })
 
-var server = app.listen(38664, function () { //监听38664port
+var server = app.listen(38664, function() { //监听38664port
     var host = server.address().adress;
     var port = server.address().port;
     console.log('应用实例，访问地址为 http://%s:%s', host, port);
 })
+
+function trans(str) {
+    return (typeof str == 'undefined') ? "" : str.replace(/"/g, '\\"').replace(/[\r\n]/g, "");
+}

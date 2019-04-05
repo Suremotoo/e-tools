@@ -100,7 +100,7 @@ exports.getSha512 = (str) => {
  * @return {[type]}     [加密后的字符串]
  */
 exports.getEncBase64 = (str) => {
-    return new Buffer(str).toString('base64');
+    return Buffer.from(str).toString('base64');
 }
 
 /**
@@ -109,7 +109,7 @@ exports.getEncBase64 = (str) => {
  * @return {[type]}     [解密后的字符串]
  */
 exports.getDecBase64 = (str) => {
-    return new Buffer(str, 'base64').toString();
+    return Buffer.from(str, 'base64').toString();
 }
 
 /**
@@ -118,7 +118,7 @@ exports.getDecBase64 = (str) => {
  * @return {[type]}     [加密后的字符串]
  */
 exports.getEncBase64Hex = (str) => {
-    return new Buffer(str, 'base64').toString('hex');
+    return Buffer.from(str, 'base64').toString('hex');
 }
 
 /**
@@ -127,7 +127,7 @@ exports.getEncBase64Hex = (str) => {
  * @return {[type]}     [解密后的字符串]
  */
 exports.getDecBase64Hex = (str) => {
-    return new Buffer(str, 'hex').toString('utf8');
+    return Buffer.from(str, 'hex').toString('utf8');
 }
 
 
@@ -138,7 +138,7 @@ exports.getDecBase64Hex = (str) => {
  */
 exports.getPic2Base64 = (file) => {
     let bitmap = fs.readFileSync(file);
-    return new Buffer(bitmap).toString('base64');
+    return Buffer.from(bitmap).toString('base64');
 }
 
 /**
@@ -148,7 +148,7 @@ exports.getPic2Base64 = (file) => {
  * @return {[type]}           [description]
  */
 exports.getPic2Base64 = (base64str, file) => {
-    var bitmap = new Buffer(base64str, 'base64');
+    var bitmap = Buffer.from(base64str, 'base64');
     fs.writeFileSync(file, bitmap);
 }
 
