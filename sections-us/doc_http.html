@@ -22,67 +22,68 @@
         <legend>HTTP Status Code</legend>
     </fieldset>
     <div style="padding-right: 2%;">
-        <p>当浏览者访问一个网页时，浏览者的浏览器会向网页所在服务器发出请求。当浏览器接收并显示网页前，此网页所在的服务器会返回一个包含HTTP状态码的信息头（server header）用以响应浏览器的请求。</p>
-        <p>HTTP状态码的英文为HTTP Status Code。</p>
+        <p>When a viewer visits a web page, the browser of the viewer sends a request to the server where the web page is located. Before the browser receives and displays the web page, the server where the web page is located returns a server header containing the HTTP status code in response to the browser request.</p>
+        <p>HTTP Status Code</p>
         <!--  -->
         <table lay-filter="parse-table">
             <thead>
                 <tr>
-                    <th lay-data="{field:'code_common', minWidth: 180}">常见的 HTTP 状态码</th>
+                    <th lay-data="{field:'code_common', minWidth: 180}">HTTP Status Code</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>200 - 请求成功</td>
+                    <td>200 - Request success</td>
                 </tr>
                 <tr>
-                    <td>301 - 资源（网页等）被永久转移到其它URL</td>
+                    <td>301 - Resources (web pages, etc.) are permanently transferred to other URL</td>
                 </tr>
                 <tr>
-                    <td>404 - 请求的资源（网页等）不存在</td>
+                    <td>404 - The requested resource (web page, etc.) does not exist</td>
                 </tr>
                 <tr>
-                    <td>500 - 内部服务器错误</td>
+                    <td>500 - Internal server error</td>
                 </tr>
             </tbody>
         </table>
         <!--  -->
-        <p>HTTP状态码由三个十进制数字组成，第一个十进制数字定义了状态码的类型，后两个数字没有分类的作用。HTTP状态码共分为5种类型：</p>
+        <p>HTTP status code consists of three decimal digits. The first decimal number defines the type of the status code. The last two digits do not have a classification function. HTTP status codes are divided into 5 types.
+：</p>
         <center>
-            <h2>HTTP状态码分类</h2>
+            <h2>HTTP status code classification</h2>
         </center>
         <table lay-filter="parse-table">
             <thead>
                 <tr>
-                    <th lay-data="{field:'code_type', width:200}">分类</th>
-                    <th lay-data="{field:'code_description'}">分类描述</th>
+                    <th lay-data="{field:'code_type', width:200}">classification</th>
+                    <th lay-data="{field:'code_description'}">Classification description</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1**</td>
-                    <td>信息，服务器收到请求，需要请求者继续执行操作</td>
+                    <td>Information, the server receives the request and needs the requestor to continue the operation</td>
                 </tr>
                 <tr>
                     <td>2**</td>
-                    <td>成功，操作被成功接收并处理</td>
+                    <td>Successful, the operation was successfully received and processed</td>
                 </tr>
                 <tr>
                     <td>3**</td>
-                    <td>重定向，需要进一步的操作以完成请求</td>
+                    <td>Redirect, need further action to complete the request</td>
                 </tr>
                 <tr>
                     <td>4**</td>
-                    <td>客户端错误，请求包含语法错误或无法完成请求</td>
+                    <td>Client error, the request contains a syntax error or the request could not be completed</td>
                 </tr>
                 <tr>
                     <td>5**</td>
-                    <td>服务器错误，服务器在处理请求的过程中发生了错误</td>
+                    <td>Server error, the server encountered an error while processing the request</td>
                 </tr>
             </tbody>
         </table>
         <center>
-            <h2>HTTP状态码列表</h2>
+            <h2>HTTP status code list</h2>
         </center>
         <table lay-filter="parse-table">
             <thead>
@@ -96,12 +97,12 @@
                 <tr>
                     <td>100</td>
                     <td>Continue</td>
-                    <td>继续。客户端应继续其请求</td>
+                    <td>Carry on. The client should continue its request</td>
                 </tr>
                 <tr>
                     <td>101</td>
                     <td>Switching Protocols</td>
-                    <td>切换协议。服务器根据客户端的请求切换协议。只能切换到更高级的协议，例如，切换到HTTP的新版本协议</td>
+                    <td>Switch the protocol. The server switches protocols according to the client's request. Can only switch to a more advanced protocol, for example, switching to a new version of HTTP protocol</td>
                 </tr>
                 <tr>
                     <td colspan="3"></td>
@@ -109,37 +110,37 @@
                 <tr>
                     <td>200</td>
                     <td>OK</td>
-                    <td>请求成功。一般用于GET与POST请求</td>
+                    <td>The request was successful. Generally used for GET and POST requests</td>
                 </tr>
                 <tr>
                     <td>201</td>
                     <td>Created</td>
-                    <td>已创建。成功请求并创建了新的资源</td>
+                    <td>Created. Successfully requested and created a new resource</td>
                 </tr>
                 <tr>
                     <td>202</td>
                     <td>Accepted</td>
-                    <td>已接受。已经接受请求，但未处理完成</td>
+                    <td>Accepted. Request accepted but not processed</td>
                 </tr>
                 <tr>
                     <td>203</td>
                     <td>Non-Authoritative Information</td>
-                    <td>非授权信息。请求成功。但返回的meta信息不在原始的服务器，而是一个副本</td>
+                    <td>Non-authorized information. The request was successful. But the returned meta information is not on the original server, but a copy</td>
                 </tr>
                 <tr>
                     <td>204</td>
                     <td>No Content</td>
-                    <td>无内容。服务器成功处理，但未返回内容。在未更新网页的情况下，可确保浏览器继续显示当前文档</td>
+                    <td>No content. The server processed successfully but did not return content. Make sure the browser continues to display the current document without updating the page</td>
                 </tr>
                 <tr>
                     <td>205</td>
                     <td>Reset Content</td>
-                    <td>重置内容。服务器处理成功，用户终端（例如：浏览器）应重置文档视图。可通过此返回码清除浏览器的表单域</td>
+                    <td>Reset the content. The server is successfully processed and the user terminal (for example: browser) should reset the document view. Use this return code to clear the browser's form fields</td>
                 </tr>
                 <tr>
                     <td>206</td>
                     <td>Partial Content</td>
-                    <td>部分内容。服务器成功处理了部分GET请求</td>
+                    <td>Part. The server successfully processed some GET requests</td>
                 </tr>
                 <tr>
                     <td colspan="3"></td>
@@ -147,42 +148,42 @@
                 <tr>
                     <td>300</td>
                     <td>Multiple Choices</td>
-                    <td>多种选择。请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端（例如：浏览器）选择</td>
+                    <td>Multiple choices. The requested resource may include multiple locations, and a list of resource characteristics and addresses may be returned for user terminal (eg, browser) selection.</td>
                 </tr>
                 <tr>
                     <td>301</td>
                     <td>Moved Permanently</td>
-                    <td>永久移动。请求的资源已被永久的移动到新URI，返回信息会包括新的URI，浏览器会自动定向到新URI。今后任何新的请求都应使用新的URI代替</td>
+                    <td>Move permanently. The requested resource has been permanently moved to the new URI, the return message will include the new URI, and the browser will automatically be directed to the new URI. Any new requests in the future should be replaced with new URIs.</td>
                 </tr>
                 <tr>
                     <td>302</td>
                     <td>Found</td>
-                    <td>临时移动。与301类似。但资源只是临时被移动。客户端应继续使用原有URI</td>
+                    <td>Temporary move. Similar to 301. But the resources are only temporarily moved. The client should continue to use the original URI</td>
                 </tr>
                 <tr>
                     <td>303</td>
                     <td>See Other</td>
-                    <td>查看其它地址。与301类似。使用GET和POST请求查看</td>
+                    <td>View other addresses. Similar to 301. View using GET and POST requests</td>
                 </tr>
                 <tr>
                     <td>304</td>
                     <td>Not Modified</td>
-                    <td>未修改。所请求的资源未修改，服务器返回此状态码时，不会返回任何资源。客户端通常会缓存访问过的资源，通过提供一个头信息指出客户端希望只返回在指定日期之后修改的资源</td>
+                    <td>Not modified. The requested resource is not modified and no resources are returned when the server returns this status code. The client usually caches the accessed resources by providing a header indicating that the client wants to return only those resources that were modified after the specified date.</td>
                 </tr>
                 <tr>
                     <td>305</td>
                     <td>Use Proxy</td>
-                    <td>使用代理。所请求的资源必须通过代理访问</td>
+                    <td>Use a proxy. The requested resource must be accessed through a proxy</td>
                 </tr>
                 <tr>
                     <td>306</td>
                     <td>Unused</td>
-                    <td>已经被废弃的HTTP状态码</td>
+                    <td>HTTP status code that has been deprecated</td>
                 </tr>
                 <tr>
                     <td>307</td>
                     <td>Temporary Redirect</td>
-                    <td>临时重定向。与302类似。使用GET请求重定向</td>
+                    <td>Temporary redirect. Similar to 302. Redirect using GET request</td>
                 </tr>
                 <tr>
                     <td colspan="3"></td>
@@ -190,62 +191,62 @@
                 <tr>
                     <td>400</td>
                     <td>Bad Request</td>
-                    <td>客户端请求的语法错误，服务器无法理解</td>
+                    <td>The syntax of the client request is incorrect and the server cannot understand</td>
                 </tr>
                 <tr>
                     <td>401</td>
                     <td>Unauthorized</td>
-                    <td>请求要求用户的身份认证</td>
+                    <td>Request for user identity authentication</td>
                 </tr>
                 <tr>
                     <td>402</td>
                     <td>Payment Required</td>
-                    <td>保留，将来使用</td>
+                    <td>Reserved, used in the future</td>
                 </tr>
                 <tr>
                     <td>403</td>
                     <td>Forbidden</td>
-                    <td>服务器理解请求客户端的请求，但是拒绝执行此请求</td>
+                    <td>The server understands the requesting client's request but refuses to execute the request</td>
                 </tr>
                 <tr>
                     <td>404</td>
                     <td>Not Found</td>
-                    <td>服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置"您所请求的资源无法找到"的个性页面</td>
+                    <td>The server was unable to find the resource (web page) based on the client's request. With this code, the website designer can set the personality page "The resource you requested could not be found"</td>
                 </tr>
                 <tr>
                     <td>405</td>
                     <td>Method Not Allowed</td>
-                    <td>客户端请求中的方法被禁止</td>
+                    <td>The method in the client request is forbidden</td>
                 </tr>
                 <tr>
                     <td>406</td>
                     <td>Not Acceptable</td>
-                    <td>服务器无法根据客户端请求的内容特性完成请求</td>
+                    <td>The server was unable to complete the request based on the content characteristics requested by the client</td>
                 </tr>
                 <tr>
                     <td>407</td>
                     <td>Proxy Authentication Required</td>
-                    <td>请求要求代理的身份认证，与401类似，但请求者应当使用代理进行授权</td>
+                    <td>Request for proxy authentication, similar to 401, but requester should use proxy for authorization</td>
                 </tr>
                 <tr>
                     <td>408</td>
                     <td>Request Time-out</td>
-                    <td>服务器等待客户端发送的请求时间过长，超时</td>
+                    <td>The server waits for the client to send a request for too long, timeout</td>
                 </tr>
                 <tr>
                     <td>409</td>
                     <td>Conflict</td>
-                    <td>服务器完成客户端的PUT请求是可能返回此代码，服务器处理请求时发生了冲突</td>
+                    <td>It is possible for the server to complete the client's PUT request to return this code, and the server has a conflict when processing the request.</td>
                 </tr>
                 <tr>
                     <td>410</td>
                     <td>Gone</td>
-                    <td>客户端请求的资源已经不存在。410不同于404，如果资源以前有现在被永久删除了可使用410代码，网站设计人员可通过301代码指定资源的新位置</td>
+                    <td>The resource requested by the client no longer exists. 410 is different from 404. If the resource has been permanently deleted now, the 410 code can be used. The website designer can specify the new location of the resource through the 301 code.</td>
                 </tr>
                 <tr>
                     <td>411</td>
                     <td>Length Required</td>
-                    <td>服务器无法处理客户端发送的不带Content-Length的请求信息</td>
+                    <td>The server cannot process the request information sent by the client without Content-Length</td>
                 </tr>
                 <tr>
                     <td>412</td>
@@ -255,27 +256,27 @@
                 <tr>
                     <td>413</td>
                     <td>Request Entity Too Large</td>
-                    <td>由于请求的实体过大，服务器无法处理，因此拒绝请求。为防止客户端的连续请求，服务器可能会关闭连接。如果只是服务器暂时无法处理，则会包含一个Retry-After的响应信息</td>
+                    <td>The request was rejected because the requested entity was too large for the server to process. To prevent continuous requests from clients, the server may close the connection. If the server is temporarily unable to process, it will contain a Retry-After response.</td>
                 </tr>
                 <tr>
                     <td>414</td>
                     <td>Request-URI Too Large</td>
-                    <td>请求的URI过长（URI通常为网址），服务器无法处理</td>
+                    <td>The requested URI is too long (the URI is usually the URL) and the server cannot process it.</td>
                 </tr>
                 <tr>
                     <td>415</td>
                     <td>Unsupported Media Type</td>
-                    <td>服务器无法处理请求附带的媒体格式</td>
+                    <td>The server was unable to process the media format attached to the request</td>
                 </tr>
                 <tr>
                     <td>416</td>
                     <td>Requested range not satisfiable</td>
-                    <td>客户端请求的范围无效</td>
+                    <td>The scope of the client request is invalid</td>
                 </tr>
                 <tr>
                     <td>417</td>
                     <td>Expectation Failed</td>
-                    <td>服务器无法满足Expect的请求头信息</td>
+                    <td>The server cannot satisfy the request header information of Expect</td>
                 </tr>
                 <tr>
                     <td colspan="3"></td>
@@ -283,32 +284,32 @@
                 <tr>
                     <td>500</td>
                     <td>Internal Server Error</td>
-                    <td>服务器内部错误，无法完成请求</td>
+                    <td>Internal server error, unable to complete request</td>
                 </tr>
                 <tr>
                     <td>501</td>
                     <td>Not Implemented</td>
-                    <td>服务器不支持请求的功能，无法完成请求</td>
+                    <td>The server does not support the requested function and cannot complete the request.</td>
                 </tr>
                 <tr>
                     <td>502</td>
                     <td>Bad Gateway</td>
-                    <td>充当网关或代理的服务器，从远端服务器接收到了一个无效的请求</td>
+                    <td>A server acting as a gateway or proxy that received an invalid request from the remote server.</td>
                 </tr>
                 <tr>
                     <td>503</td>
                     <td>Service Unavailable</td>
-                    <td>由于超载或系统维护，服务器暂时的无法处理客户端的请求。延时的长度可包含在服务器的Retry-After头信息中</td>
+                    <td>Due to overload or system maintenance, the server is temporarily unable to process the client's request. The length of the delay can be included in the server's Retry-After header information.</td>
                 </tr>
                 <tr>
                     <td>504</td>
                     <td>Gateway Time-out</td>
-                    <td>充当网关或代理的服务器，未及时从远端服务器获取请求</td>
+                    <td>A server acting as a gateway or proxy, not getting requests from a remote server in time</td>
                 </tr>
                 <tr>
                     <td>505</td>
                     <td>HTTP Version not supported</td>
-                    <td>服务器不支持请求的HTTP协议的版本，无法完成处理</td>
+                    <td>The server does not support the version of the requested HTTP protocol and cannot process it.</td>
                 </tr>
             </tbody>
         </table>
