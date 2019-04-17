@@ -1,0 +1,27 @@
+dist: trusty
+sudo: required
+
+language: node_js
+node_js:
+  - "node"
+
+matrix:
+  include:
+    - os: osx
+    - os: linux
+      before_install:
+        - sudo npm install electron-builder -g
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - npm run pack:all
+
+branches:
+  only:
+    - master
