@@ -1,0 +1,25 @@
+dist: trusty
+sudo: required
+
+language: node_js
+node_js:
+  - "node"
+
+matrix:
+  include:
+    - os: osx
+    - os: linux
+
+cache:
+  directories:
+    - node_modules
+
+install:
+  - npm install
+
+script:
+  - npm run electron:build
+
+branches:
+  only:
+    - master
