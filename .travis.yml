@@ -5,12 +5,8 @@ language: node_js
 node_js:
   - "node"
 
-matrix:
-  include:
-    - os: osx
-    - os: linux
-      before_install:
-        - sudo npm install electron-builder -g
+before_script:
+ - npm install electron-builder -g
 
 cache:
   directories:
