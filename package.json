@@ -7,6 +7,7 @@
     "start": "electron .",
     "dev": "electron . --debug",
     "test": "mocha && standard",
+    "pack:test": "electron-builder --dir",
     "pack": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder --dir",
     "pack:all": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder --platform=all",
     "dist": "ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/  electron-builder",
