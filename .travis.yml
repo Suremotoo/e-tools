@@ -18,7 +18,7 @@ install:
   - npm install
 
 script:
-  - npm run electron:build
+  - npm run pack:all
 
 branches:
   only:
