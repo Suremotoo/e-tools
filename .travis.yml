@@ -7,7 +7,17 @@ node_js:
 
 before_script:
  - npm install electron-builder -g
-
+ 
+matrix:
+  include:
+    - os: osx
+    - os: linux
+      before_install:
+        - sudo apt-get install --no-install-recommends -y gcc-multilib g++-multilib
+        - wget -nc https://dl.winehq.org/wine-builds/Release.key
+        - sudo apt-key add Release.key
+        - sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
+        - sudo apt-get install -y --install-recommends winehq-stable
 cache:
   directories:
     - node_modules
