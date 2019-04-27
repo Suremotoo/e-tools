@@ -1,11 +1,13 @@
+const ipc = require('electron').ipcRenderer
 const shell = require('electron').shell
 const path = require('path')
 const url = require('url')
 const Store = require('electron-store');
 const store = new Store();
 
-layui.use(['element'], function() {
+layui.use(['element', 'form'], function() {
     var $ = layui.jquery,
+        form = layui.form,
         element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
 
     // 设置导航tab 不允许关闭
@@ -189,12 +191,21 @@ layui.use(['element'], function() {
         })(index);
     });
 
+form.render(null, 'component-form-element');
+
+const asyncMsgBtn = $('#select_language a')
+form.on('switch(quick_change_switch)', function(data){
+  store.set("quickchangeStore", data.elem.checked);
+  console.log('quickchange:' + data.elem.checked); //开关是否开启，true或者false
+});
 // 绑定切换语言监听事件
     $('#select_language a').on('click', function() {
         var othis = $(this),
             language = othis.data('language');
              var location = window.location;
              store.set("languageStore", language);
+            ipc.send('ipc-change-language', language)
+
         switch (language) {
             case "ru":
                 location.href = "index-ru.html"
@@ -209,4 +220,19 @@ layui.use(['element'], function() {
         }
     });
 
+const tipsObj = {
+  "cn": "快速切换设置打开，不会更新程序菜单哦！",
+  "us": "The quick switch setting is turned on and the program menu will not be updated!",
+  "ru": "Настройка быстрого переключения включена, и меню программы не будет обновляться!"
+}
+    $('#quick_change').prop("checked", store.get('quickchangeStore'));
+    form.render("checkbox");
+    $('#quickSetting').on('click', function(event) {
+        var othis = $(this),
+            language = othis.data('language');
+         layer.tips(tipsObj[language], '#quickSetting', {
+          tips: [1, '#3595CC'],
+          time: 4000
+        });
+    });
 });

@@ -25,6 +25,21 @@
                         <dd><a href="javascript:;" data-language="us"><img src="assets/img/flags/usa.png"> 英语</a></dd>
                     </dl>
                 </li>
+                <li class="layui-nav-item layui-hide-xs" lay-unselect="" id="quickSetting" data-language="cn">
+                    <a href="javascript:;">
+                        <i class="layui-icon" style="font-size: 16px; color: #1E9FFF;">&#xe674;</i>
+                        快速切换设置
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <div class="layui-form" lay-filter="component-form-element">
+                        <div class="layui-col-md4">
+                           <input type="checkbox" id="quick_change" name="quick_change" lay-skin="switch" lay-text="开启|关闭" checked="" lay-filter="quick_change_switch">
+                            <div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>开启</em><i></i>
+                            </div>
+                        </div>
+                     </div>
+                </li>
             </ul>
         </div>
         <div class="layui-side layui-bg-black">
@@ -266,7 +281,7 @@
         </div>
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            <center>© 2018 <a href="https://github.com/Suremotoo/e-tools">e-tools</a></center>
+           <center>© 2018 <a href="https://github.com/Suremotoo/e-tools">e-tools</a></center>
         </div>
     </div>
     <script src="layui/layui.js"></script>

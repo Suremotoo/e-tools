@@ -140,3 +140,7 @@
 .site-doc-color .bottom-desc li:hover {
     cursor: pointer;
 }
+
+.layui-form-switch {
+    margin-top: 2px !important;
+}

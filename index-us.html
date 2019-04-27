@@ -25,6 +25,21 @@
                         <dd><a href="javascript:;" data-language="ru"><img src="assets/img/flags/rus.png"> Russian</a></dd>
                     </dl>
                 </li>
+                <li class="layui-nav-item layui-hide-xs" lay-unselect="" id="quickSetting" data-language="us">
+                    <a href="javascript:;">
+                        <i class="layui-icon" style="font-size: 16px; color: #1E9FFF;">&#xe674;</i>
+                        Quickly switch Settings
+                    </a>
+                </li>
+                <li class="layui-nav-item">
+                    <div class="layui-form" lay-filter="component-form-element">
+                        <div class="layui-col-md4">
+                           <input type="checkbox" id="quick_change" name="quick_change" lay-skin="switch" lay-text="On|Off" checked="" lay-filter="quick_change_switch">
+                            <div class="layui-unselect layui-form-switch" lay-skin="_switch"><em>On</em><i></i>
+                            </div>
+                        </div>
+                     </div>
+                </li>
             </ul>
         </div>
         <div class="layui-side layui-bg-black">
