@@ -1,63 +1,5 @@
 // 菜单栏、dock 栏菜单设置
 
-// 引入主线程,  Menu、app、ipcMian、BrowserWindow 模块
-/*
-
-const {Menu, app, ipcMain, BrowserWindow} = require('electron');
-
-
-// 定义菜单模板
-let template = [
-	{
-		label: 'Menu-One',
-		submenu: [
-			{
-				label: 'two'
-			},
-			{
-				type: 'separator'
-			},
-			{
-				label: 'haha',
-				click: () => {
-					console.log('Show haha.');
-				}
-			}
-		]
-	},
-	{
-		label: '工具',
-		submenu:[
-		{
-			label: '打开开发者调试工具',
-			click: () => {
-
-			}
-		}
-		]
-	}
-];
-
-// 构建菜单模板
-let menu = Menu.buildFromTemplate(template);
-
-// 将菜单应用到程序窗口
-Menu.setApplicationMenu(menu);
-
-// 将菜单应用程序 Dock 栏右键
-app.dock.setMenu(menu); 
-
-// 
-ipcMain.on('show-context-menu',(e) => {
-	const win = BrowserWindow.fromWebContents(e.sender);
-	menu.popup(win);
-});
-
-*/
-
-
-
-
 const electron = require('electron')
 const BrowserWindow = electron.BrowserWindow
 const Menu = electron.Menu
@@ -138,22 +80,7 @@ let template = [{
         focusedWindow.toggleDevTools()
       }
     }
-  }/*, {
-    type: 'separator'
-  }, {
-    label: '应用程序菜单演示',
-    click: function (item, focusedWindow) {
-      if (focusedWindow) {
-        const options = {
-          type: 'info',
-          title: '应用程序菜单演示',
-          buttons: ['好的'],
-          message: '此演示用于 "菜单" 部分, 展示如何在应用程序菜单中创建可点击的菜单项.'
-        }
-        electron.dialog.showMessageBox(focusedWindow, options, function () {})
-      }
-    }
-  }*/
+  }
   ]
 }, {
   label: '窗口',
