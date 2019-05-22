@@ -8,12 +8,12 @@
 
 <div align="center">
   <!-- FOSSA Status -->
-<a href="https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=shield"/></a>
+<!-- <a href="https://app.fossa.io/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2FSuremotoo%2Fe-tools.svg?type=shield"/></a> -->
 
   <!-- License -->
-<!-- <a href="https://github.com/Suremotoo/e-tools">
+  <a href="https://github.com/Suremotoo/e-tools">
 ​    <img src="https://img.shields.io/github/license/Suremotoo/e-tools.svg" alt="License">
-  </a> -->
+  </a> 
  <!-- snapcraft store -->
   <a href="https://snapcraft.io/e-tools" target="_blank">
     <img alt="E-tools" src="https://snapcraft.io/e-tools/badge.svg" />
