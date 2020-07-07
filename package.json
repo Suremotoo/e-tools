@@ -57,7 +57,7 @@
     }
   },
   "devDependencies": {
-    "electron": "^3.0.0"
+    "electron": "^9.1.0"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
