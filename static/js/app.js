@@ -60,9 +60,8 @@ function getLatestReleaseDetails() {
         var m = releaseDate.getMonth() + 1;
         var y = releaseDate.getFullYear();
 
-        $(".latest-version .version #version").text("v" + release.tag_name);
-        $(".latest-version .version #date").text(d + "/" + m + "/" + y);
-        $(".latest-version .latest-desc span").text("Change Log: " + release.name);
+        $(".latest-version .version span").text(release.tag_name);
+        $(".latest-version .date span").text(d + "/" + m + "/" + y);
         $(".latest-version").fadeIn(500);
         $("#coffee-loading").hide();
     });
